@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".EditProfileActivity">
+
+
+    <LinearLayout
+        android:paddingHorizontal="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp">
+
+
+            <ImageView
+                android:id="@+id/backicon_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/backleft_icon"
+                android:layout_gravity="start"/>
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:letterSpacing="0.03"
+                android:textSize="28sp"
+                android:textColor="@color/fontcolor"
+                android:fontFamily="@font/roboto_semibold"/>
+        </LinearLayout>
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile_edit"/>
+        
+        
+        
+        <TextView
+            android:layout_marginTop="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="20sp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+            android:id="@+id/nameinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="Zawe Yan Naing"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="textPersonName"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textSize="20sp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+
+            android:id="@+id/phoneinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="09962031033"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="text"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+
+            android:id="@+id/emailinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="zaweyannaing121@gmail.com"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="textEmailAddress"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg)"
+            android:textSize="20sp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+
+            android:id="@+id/weightinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="23"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="numberDecimal"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height (cm)"
+            android:textSize="20sp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+
+            android:id="@+id/heightinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="170"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="numberDecimal"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight" />
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20dp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+
+            android:id="@+id/ageinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="23"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="number"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="20dp"
+            android:textColor="@color/fontcolor"
+            android:fontFamily="@font/roboto"/>
+
+        <EditText
+
+            android:id="@+id/locationinEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            android:hint="Mandalay"
+            android:padding="19dp"
+            android:background="@drawable/editprofile_border"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/fontcolor"
+            android:textColorHint="@color/fontlight"
+            android:inputType="text"/>
+
+
+        <Button
+            android:id="@+id/btnSave"
+            android:padding="19dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:letterSpacing="0.1"
+            android:textColor="@color/white"
+            android:text="SAVE"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:background="@drawable/save_button"
+            android:layout_marginTop="35dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Assignment_level5</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="repass">Confirm Password</string>
+    <string name="emailHint">Enter your Email Address</string>
+    <string name="passHint">Enter your Password</string>
+    <string name="repassHint">Enter your Confirm Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="askAccount">"Already have an Account? "</string>
+    <string name="SignIn">Sign In</string>
+
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+
+</resources>

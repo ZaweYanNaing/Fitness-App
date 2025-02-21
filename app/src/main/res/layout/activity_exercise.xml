@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExerciseActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/photoInExercise"
+        android:contentDescription="exercisePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxing_photo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_marginTop="32dp"
+            android:id="@+id/ExerciseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boxing"
+            android:textAlignment="center"
+            android:textColor="@color/fontcolor"
+            android:textSize="39sp"
+            android:fontFamily="@font/roboto_semibold"
+            android:letterSpacing="0.05"/>
+
+        <LinearLayout
+            android:layout_marginTop="57dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+
+
+            <LinearLayout
+                android:id="@+id/caloriesLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/calories_smallicon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calories"
+                        android:letterSpacing="0.02"
+                        android:textSize="18sp"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/caloriesData"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:letterSpacing="0.07"
+                    android:text="---"
+                    android:textColor="@color/fontcolor"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto_semibold"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TimeLayout"
+                android:layout_width="0dp"
+                android:layout_marginTop="116dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/time_smallicon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:letterSpacing="0.04"
+                        android:textSize="25sp"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TimeData"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="35sp"
+                    android:letterSpacing="0.07"
+                    android:text="00:00:00"
+                    android:textColor="@color/fontcolor"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto_semibold"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/stepsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/step_smallicon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Steps"
+                        android:letterSpacing="0.02"
+                        android:textSize="18sp"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/stepsData"
+                    android:layout_marginTop="13dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:letterSpacing="0.07"
+                    android:text="---"
+                    android:textColor="@color/fontcolor"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/roboto_semibold"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="70dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:visibility="visible"
+                android:id="@+id/playButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/play_btn"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                android:id="@+id/pauseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:id="@+id/stopButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/stop_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_marginStart="15dp"
+                android:id="@+id/playButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+

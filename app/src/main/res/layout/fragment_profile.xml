@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+
+        <LinearLayout
+            android:id="@+id/llF"
+            android:paddingHorizontal="23dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/backleft_icon"
+                android:id="@+id/backbtnInProfile"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/fontcolor"
+                android:text="Profile"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:letterSpacing="0.02"
+                android:fontFamily="@font/roboto"
+                android:textSize="26sp"
+                android:layout_height="wrap_content"/>
+
+
+
+                <ImageView
+                    android:id="@+id/editProfileinProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/edit_nonicon"/>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/EdtProfile"
+            android:scaleType="fitXY"
+            android:layout_marginTop="30dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llF"
+            android:src="@drawable/manlogo"/>
+
+        <TextView
+            android:id="@+id/NameinProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:fontFamily="@font/roboto_semibold"
+            android:text="Zawe Yan Naing"
+            android:textAlignment="center"
+            android:textColor="@color/fontcolor"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EdtProfile" />
+
+
+
+        <LinearLayout
+            android:id="@+id/llpersonaldata"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NameinProfile"
+            android:layout_marginTop="37dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/weightinProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_semibold"
+                        android:textSize="25sp"
+                        android:letterSpacing="0.05"
+                        android:text="27"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="kg"
+                        android:layout_marginStart="7dp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Weight"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/heightinProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_semibold"
+                        android:textSize="27sp"
+                        android:letterSpacing="0.05"
+                        android:text="13"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="cm"
+                        android:layout_marginStart="7dp"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Height"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ageinProfile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_semibold"
+                        android:textSize="27sp"
+                        android:letterSpacing="0.05"
+                        android:text="20"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto_light"
+                        android:text="yrs"
+                        android:layout_marginStart="7dp"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Age"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llemail"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llpersonaldata"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email_icon"/>
+
+            <LinearLayout
+                android:layout_marginStart="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto"
+                    android:text="Email"
+                    android:textSize="18sp"/>
+
+
+                <TextView
+                    android:id="@+id/emailinProfile"
+                    android:layout_width="wrap_content"
+                    android:letterSpacing="0.05"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_semibold"
+                    android:textSize="20sp"
+                    android:text="zaweyannaing121@gmail.com"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:paddingHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C4B8B8"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/llemail"/>
+
+
+        <LinearLayout
+            android:id="@+id/llphone"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llemail"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_icon"/>
+
+            <LinearLayout
+                android:layout_marginStart="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto"
+                    android:text="Phone"
+                    android:textSize="18sp"/>
+
+
+                <TextView
+                    android:id="@+id/phoneinProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_semibold"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.05"
+                    android:text="09962031033"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:paddingHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C4B8B8"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/llphone"/>
+
+
+        <LinearLayout
+            android:id="@+id/llgender"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llphone"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/gender_icon"/>
+
+            <LinearLayout
+                android:layout_marginStart="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto"
+                    android:text="Gender"
+                    android:textSize="18sp"/>
+
+
+                <TextView
+                    android:id="@+id/genderinProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_semibold"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.05"
+                    android:text="Male"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:paddingHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C4B8B8"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/llgender"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/lllocation"
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/llgender"
+            android:orientation="horizontal"
+            >
+
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/location"/>
+
+            <LinearLayout
+                android:layout_marginStart="25sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto"
+                    android:text="Location"
+                    android:textSize="18sp"/>
+
+
+                <TextView
+                    android:id="@+id/locationinProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/fontcolor"
+                    android:fontFamily="@font/roboto_semibold"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.05"
+                    android:text="Mandalay"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <View
+            android:paddingHorizontal="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#C4B8B8"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/lllocation"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

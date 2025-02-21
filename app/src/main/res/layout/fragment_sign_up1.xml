@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpFragment1">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:letterSpacing="0.03"
+           android:text="@string/email"
+           android:textColor="@color/black"
+           android:textSize="19sp"
+           android:textStyle="bold" />
+
+       <EditText
+           android:id="@+id/etEmailSignUp"
+           android:layout_width="488dp"
+           android:layout_height="wrap_content"
+           android:layout_marginVertical="15dp"
+           android:background="@drawable/input_background"
+           android:hint="@string/emailHint"
+           android:padding="15dp"
+           android:autofillHints="emailAddress"
+           android:textColor="@color/black"
+           android:textColorHint="@color/black"
+           android:inputType="textEmailAddress"
+           />
+
+
+
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:letterSpacing="0.03"
+           android:text="@string/pass"
+           android:textColor="@color/black"
+           android:textSize="19sp"
+           android:textStyle="bold" />
+
+       <EditText
+           android:id="@+id/etPassSignUp"
+           android:layout_width="488dp"
+           android:layout_height="wrap_content"
+           android:layout_marginVertical="15dp"
+           android:background="@drawable/input_background"
+           android:hint="@string/passHint"
+           android:padding="15dp"
+           android:autofillHints="password"
+           android:textColor="@color/black"
+           android:textColorHint="@color/black"
+           android:inputType="textPassword"/>
+
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:letterSpacing="0.03"
+           android:text="@string/repass"
+           android:textColor="@color/black"
+           android:textSize="19sp"
+           android:textStyle="bold" />
+
+       <EditText
+           android:id="@+id/etConPassSignUp"
+           android:layout_width="488dp"
+           android:layout_height="wrap_content"
+           android:layout_marginVertical="15dp"
+           android:background="@drawable/input_background"
+           android:hint="@string/repassHint"
+           android:padding="15dp"
+           android:autofillHints="password"
+           android:textColor="@color/black"
+           android:textColorHint="@color/black"
+           android:inputType="textPassword"/>
+   </LinearLayout>
+</FrameLayout>

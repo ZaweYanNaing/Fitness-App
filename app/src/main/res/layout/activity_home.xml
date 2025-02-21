@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".HomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.assignment_level5.HomeFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav"
+        app:itemIconTint="@color/black"
+        app:itemIconSize="30dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/setGoalll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_background"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:elevation="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_up_bakground">
+
+            <ImageView
+                android:id="@+id/pop_up_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pop_up"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/CloseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+
+
+            <TextView
+                android:textColor="@color/fontcolor"
+                android:text="Today's impossible is  tomorrow's normal "
+                android:layout_width="145dp"
+                android:letterSpacing="0.01"
+                android:fontFamily="@font/roboto"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="59dp"
+                android:layout_marginStart="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/pop_up_background"
+                app:layout_constraintEnd_toEndOf="@id/pop_up_background"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/pop_up_background">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content"
+                    android:text="SET A GOAL"
+                    android:textSize="19sp"
+                    android:letterSpacing="0.08"
+                    android:textColor="@color/fontcolor"
+                    android:padding="9dp"
+                    android:layout_marginBottom="9dp"
+                    android:fontFamily="@font/roboto_semibold"/>
+
+                <LinearLayout
+                    android:layout_marginBottom="9dp"
+                    android:layout_width="240dp"
+                    android:paddingVertical="9dp"
+                    android:background="@drawable/editprofile_border"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edsetCalories"
+                        android:background="@null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="500"
+                        android:textSize="17dp"
+                        android:paddingVertical="3dp"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="@color/fontcolor"
+                        android:textColorHint="@color/fontlight"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="54dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/fontcolor"
+                        android:fontFamily="@font/roboto"
+                        android:paddingHorizontal="13dp"
+                        android:paddingVertical="3dp"
+                        android:text="Kcal"
+                        android:textSize="13sp"
+                        android:background="@drawable/white_background_btn"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="9dp"
+                    android:layout_width="240dp"
+                    android:paddingVertical="9dp"
+                    android:background="@drawable/editprofile_border"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edsetTime"
+                        android:background="@null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="40"
+                        android:textSize="17dp"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="@color/fontcolor"
+                        android:textColorHint="@color/fontlight"
+                        android:inputType="number"/>
+
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="54dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/fontcolor"
+                        android:paddingHorizontal="13dp"
+                        android:paddingVertical="3dp"
+                        android:text="Mins"
+                        android:textSize="13sp"
+                        android:background="@drawable/white_background_btn"/>
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="240dp"
+                    android:paddingVertical="9dp"
+                    android:background="@drawable/editprofile_border"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edsetStep"
+                        android:background="@null"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="4000"
+                        android:textSize="17dp"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="@color/fontcolor"
+                        android:textColorHint="@color/fontlight"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        android:fontFamily="@font/roboto"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="54dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="15dp"
+                        android:textColor="@color/fontcolor"
+                        android:paddingHorizontal="13dp"
+                        android:paddingVertical="3dp"
+                        android:text="Step"
+                        android:textSize="13sp"
+                        android:background="@drawable/white_background_btn"/>
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/setGoal_btn"
+                    android:layout_width="240dp"
+                    android:layout_height="44dp"
+                    android:textSize="15sp"
+                    android:paddingVertical="9dp"
+                    android:letterSpacing="0.05"
+                    android:elevation="15dp"
+                    android:textColor="@color/white"
+                    android:text="SAVE"
+                    android:layout_marginBottom="20dp"
+                    android:textAlignment="center"
+                    android:background="@drawable/save_button"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_goal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/add_goal_icon"
+        android:elevation="20dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

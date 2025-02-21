@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".SignUpActivity">
+
+
+
+
+    <ImageView
+
+        android:id="@+id/imageViewSigninlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        app:srcCompat="@drawable/signuplogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="43dp"
+        android:contentDescription="@string/app_name"/>
+
+
+    <ImageView
+        android:id="@+id/imageViewText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/signup_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSigninlogo"
+        android:layout_marginTop="13dp"
+        android:contentDescription="@string/app_name"/>
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:alpha="0.86"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/loginboder"
+        android:paddingHorizontal="33dp"
+        android:paddingVertical="15dp">
+
+
+
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentContainer"/>
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="SIGN UP"
+                android:textAlignment="center"
+                android:background="@drawable/buttonborder"
+                android:layout_marginTop="22dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="18dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/askAccount"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/hasaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/SignIn"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/warrning" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorSignUp"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

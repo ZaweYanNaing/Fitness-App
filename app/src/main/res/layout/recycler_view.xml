@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingVertical="20dp"
+    android:background="@drawable/card_background">
+
+    <ImageView
+        android:id="@+id/activityImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/walk_exercise"
+        android:layout_weight="0.8"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/aname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking"
+            android:textColor="@color/fontcolor"
+            android:textSize="20sp"
+            android:letterSpacing="0.07"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/roboto_semibold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginEnd="25dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calories_smallicon"/>
+
+            <TextView
+                android:id="@+id/caloriesDataInRecyclerView"
+                android:layout_marginStart="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="230"
+                android:letterSpacing="0.05"
+                android:textSize="18sp"
+                android:textColor="@color/fontcolor"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kcal"
+                android:textSize="18sp"
+                android:textColor="@color/fontcolor"
+                android:fontFamily="@font/roboto"/>
+
+            <ImageView
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/line"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_smallicon"/>
+
+            <TextView
+                android:id="@+id/timesDataInRecyclerView"
+                android:layout_marginStart="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:letterSpacing="0.05"
+                android:textSize="18sp"
+                android:textColor="@color/fontcolor"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="min"
+                android:textSize="18sp"
+                android:textColor="@color/fontcolor"
+                android:fontFamily="@font/roboto"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
