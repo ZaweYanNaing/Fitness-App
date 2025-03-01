@@ -1,4 +1,5 @@
 package com.example.assignment_level5
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import android.view.View
@@ -9,21 +10,25 @@ import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentManager
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import org.json.JSONArray
 import org.json.JSONException
 import java.time.LocalDate
 
 class HomeActivity : AppCompatActivity() {
+    private val LOCATION_PERMISSION_REQUEST_CODE = 1000
     private val URL="http://10.0.2.2:8080/goal.php"
     private lateinit var bottomNavigationView: BottomNavigationView
     private lateinit var fManager: FragmentManager
     private lateinit var llsetGoal: LinearLayout
-    private lateinit var setGoal_btn:ImageView
+    private lateinit var setGoal_btn:FloatingActionButton
     private lateinit var edcalories:EditText
     private lateinit var edtime:EditText
     private lateinit var edsteps:EditText
@@ -42,6 +47,7 @@ class HomeActivity : AppCompatActivity() {
         enableEdgeToEdge()
         window.isNavigationBarContrastEnforced=false
         setContentView(R.layout.activity_home)
+        askLocationPermission()
 
 
         //set Goal function
@@ -198,6 +204,19 @@ class HomeActivity : AppCompatActivity() {
         Volley.newRequestQueue(this).add(stringRequest)
         return isSuccess
     }
+
+    private fun askLocationPermission() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION)
+            != PackageManager.PERMISSION_GRANTED) {
+
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE
+            )
+        }
+    }
+
 
 
 
