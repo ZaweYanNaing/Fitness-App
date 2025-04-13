@@ -49,3 +49,7 @@ class ExerciseAdapter(private val exerciseList: List<Exercise>) : RecyclerView.A
         return exerciseList.size
     }
 }
+
+
+
+
